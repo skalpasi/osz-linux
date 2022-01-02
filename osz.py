@@ -2,8 +2,8 @@ import os
 import sys
 import subprocess as sp
 
-if sys.argv[1] == '':
-    print("Usage: osz osu-beatmap.osz")
+if len(sys.argv)==1:
+    print("Usage: python3 osz.py osu-beatmap.osz")
 else:
     folder = sys.argv[1][0:len(sys.argv[1])-4];
     user = sp.getoutput('whoami')
